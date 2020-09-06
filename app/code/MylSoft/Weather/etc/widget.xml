@@ -1,0 +1,11 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="MylSoft\Weather\Block\Widget\Index" id="mylsoft_weather_widget">
+        <label>City Weather</label>
+        <description>This is widget display city weather</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Label</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
