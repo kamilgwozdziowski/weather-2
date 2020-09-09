@@ -1,7 +1,9 @@
 <?php
 
 /** MylSoft\Weather\Block\Widget\Index $block */
+
+$temperature = $block->getData('temperature');
 ?>
 <h3><?= $block->escapeHtml($block->getData('title')) ?></h3>
-<p>Temperature: <b>23 C</b>
+<p>Temperature: <b><?= $temperature ?></b>
 </p>
