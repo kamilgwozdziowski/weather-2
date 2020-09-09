@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
++    <table name="mylsoft_weather_weather" resource="default" comment="Create table weather citys">
++        <column xsi:type="int" name="id" padding="10" identity="true" unsigned="true" nullable="false" comment="ID"/>
++        <column xsi:type="int" name="city_id" unsigned="true" nullable="false" comment="City ID"/>
++        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="City name"/>
++        <column xsi:type="varchar" name="country" nullable="false" length="2" comment="Country code"/>
++        <column xsi:type="float" name="temp" nullable="false" comment="Temperature"/>
++        <column xsi:type="float" name="feels_like" nullable="false" comment="Temperature feels like"/>
++        <column xsi:type="float" name="temp_min" nullable="false" comment="Temperature min"/>
++        <column xsi:type="float" name="temp_max" nullable="false" comment="Temperature max"/>
++        <column xsi:type="float" name="wind_speed" nullable="false" comment="Wind speed"/>
++        <column xsi:type="smallint" name="wind_deg" nullable="false" comment="Wind deg"/>
++        <column xsi:type="smallint" name="pressure" nullable="false" comment="Pressure"/>
++        <column xsi:type="smallint" name="humidity" nullable="false" comment="Humidity"/>
++        <column xsi:type="smallint" name="clouds" nullable="false" comment="Clouds"/>
++        <column xsi:type="timestamp" name="time" comment="Time"/>
++        <constraint xsi:type="primary" referenceId="PRIMARY">
++            <column name="id"/>
++		</constraint>
++	
+    </table>
+</schema>

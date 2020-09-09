@@ -1,0 +1,23 @@
+{
+    "mylsoft_weather_weather": {
+        "column": {
+            "id": true,
+            "city_id": true,
+            "name": true,
+            "country": true,
+            "temp": true,
+            "feels_like": true,
+            "temp_min": true,
+            "temp_max": true,
+            "wind_speed": true,
+            "wind_deg": true,
+            "pressure": true,
+            "humidity": true,
+            "clouds": true,
+            "time": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
