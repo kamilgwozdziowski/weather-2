@@ -1,9 +1,9 @@
 <?php
 
-namespace MylSoft\Weather\Test\Integration\Block\Widget;
+namespace MylSoft\Weather\Test\Integration\Block;
 
 use PHPUnit\Framework\TestCase;
-use MylSoft\Weather\Block\Widget\Index;
+use MylSoft\Weather\Block\CityWeather;
 use Magento\Framework\View\LayoutInterface;
 use Magento\Framework\ObjectManagerInterface;
 use Magento\TestFramework\Helper\Bootstrap;
@@ -11,9 +11,9 @@ use Magento\TestFramework\Helper\Bootstrap;
 /**
  * @magentoAppArea frontend
  */
-class IndexTest extends TestCase
+class CityWeatherTest extends TestCase
 {
-    /** @var Index */
+    /** @var CityWeather */
     private $object;
 
     /** @var LayoutInterface */
@@ -31,23 +31,20 @@ class IndexTest extends TestCase
     {
         parent::setUp();
         $this->objectManager = Bootstrap::getObjectManager();
-        $this->object = $this->objectManager->get(Index::class);
+        $this->object = $this->objectManager->get(CityWeather::class);
         $this->layout = $this->objectManager->get(LayoutInterface::class);
     }
 
     public function testToHtml()
     {
-        $template = 'MylSoft_Weather::widget/index.phtml';
-        $title = 'Test Title';
+        $template = 'MylSoft_Weather::city_weather.phtml';
         $temperature = 24;
 
-        $block = $this->layout->createBlock(Index::class);
+        $block = $this->layout->createBlock(CityWeather::class);
         $block->setTemplate($template);
-        $block->setData('title', $title);
         $block->setData('temperature', $temperature);
         $html = $block->toHtml();
 
-        $this->assertContains($title, $html);
         $this->assertContains('<b>' . $temperature . '</b>', $html);
         $this->assertTrue(true);
     }
