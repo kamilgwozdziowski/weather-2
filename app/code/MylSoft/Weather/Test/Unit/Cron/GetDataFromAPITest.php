@@ -3,13 +3,12 @@
 namespace MylSoft\Weather\Test\Unit\Cron;
 
 use PHPUnit\Framework\TestCase;
-use MylSoft\Weather\Cron\GetWeather;
+use MylSoft\Weather\Cron\GetDataFromAPI;
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
-use Magento\Framework\HTTP\Client\Curl;
 
-class GetWeatherTest extends TestCase
+class GetDataFromAPITest extends TestCase
 {
-    /** @var GetWeather */
+    /** @var GetDataFromAPI */
     private $object;
 
     /** @var ObjectManager */
@@ -24,12 +23,12 @@ class GetWeatherTest extends TestCase
     {
         parent::setUp();
         $this->objectManager = new ObjectManager($this);
-        $this->object = $this->objectManager->getObject(GetWeather::class);
+        $this->object = $this->objectManager->getObject(GetDataFromAPI::class);
     }
 
     public function testGetWeatherInstance()
     {
-        $this->assertInstanceOf(GetWeather::class, $this->object);
+        $this->assertInstanceOf(GetDataFromAPI::class, $this->object);
     }
 
     public function testGetCityData()

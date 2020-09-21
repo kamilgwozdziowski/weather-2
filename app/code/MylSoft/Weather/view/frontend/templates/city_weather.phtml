@@ -2,8 +2,9 @@
 
 /** MylSoft\Weather\Block\CityWeather $block */
 
-$temperature = $block->getData('temperature');
+$viewModel = $block->getData('viewModel');
+$weather = $viewModel->getWeather();
 ?>
 <h3>Weather</h3>
-<p>Temperature: <b><?= $temperature ?></b>
+<p>Temperature: <b><?= $weather['temp'] ?> 'C</b>
 </p>

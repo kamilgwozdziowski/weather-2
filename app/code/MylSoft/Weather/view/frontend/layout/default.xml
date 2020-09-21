@@ -3,7 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="footer-container">
-            <block class="MylSoft\Weather\Block\CityWeather" name="footer_cityweather" template="MylSoft_Weather::city_weather.phtml" />
+            <block class="MylSoft\Weather\Block\CityWeather" name="footer_cityweather" template="MylSoft_Weather::city_weather.phtml">
+                <arguments>
+                    <argument name="viewModel" xsi:type="object">MylSoft\Weather\ViewModel\NowWeather</argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>

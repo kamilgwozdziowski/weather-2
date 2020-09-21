@@ -1,0 +1,238 @@
+[99367] Log opened at 2020-09-18 07:51:18
+[99367] I: Checking remote connect back address.
+[99367] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[99367] I: Checking header 'REMOTE_ADDR'.
+[99367] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[99367] I: Connected to client. :-)
+[99367] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/mylek/www/magento235/bin/magento" language="PHP" xdebug:language_version="7.3.18-1+ubuntu20.04.1+deb.sury.org+1" protocol_version="1.0" appid="99367" idekey="mylek"><engine version="2.9.6"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[99367] <- breakpoint_list -i 1
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[99367] <- breakpoint_set -i 2 -t line -f file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php -n 33
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="993670001"></response>
+
+[99367] <- breakpoint_list -i 3
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 4
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_set -i 5 -t exception -x *
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="993670002"></response>
+
+[99367] <- run -i 6
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="stopping" reason="ok"></response>
+
+[99367] <- breakpoint_list -i 7
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 8
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 9
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="9"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 10
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="10"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 11
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="11"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 12
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="12"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 13
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="13"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 14
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="14"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 15
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="15"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 16
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="16"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 17
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="17"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 18
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="18"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 19
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="19"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 20
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="20"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 21
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="21"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 22
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="22"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 23
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="23"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- breakpoint_list -i 24
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="24"><breakpoint type="exception" exception="*" state="enabled" hit_count="0" hit_value="0" id="993670002"></breakpoint><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="993670001"></breakpoint></response>
+
+[99367] <- stop -i 25
+[99367] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="25" status="stopped" reason="ok"></response>
+
+[99367] Log closed at 2020-09-18 07:52:22
+
+[5832] Log opened at 2020-09-18 08:41:31
+[5832] I: Checking remote connect back address.
+[5832] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[5832] I: Checking header 'REMOTE_ADDR'.
+[5832] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[5832] I: Connected to client. :-)
+[5832] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/mylek/www/magento235/vendor/squizlabs/php_codesniffer/bin/phpcs" language="PHP" xdebug:language_version="7.3.18-1+ubuntu20.04.1+deb.sury.org+1" protocol_version="1.0" appid="5832" idekey="mylek"><engine version="2.9.6"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[5832] <- breakpoint_list -i 1
+[5832] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[5832] <- breakpoint_set -i 2 -t line -f file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php -n 33
+[5832] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="58320001"></response>
+
+[5832] <- breakpoint_list -i 3
+[5832] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58320001"></breakpoint></response>
+
+[5832] <- breakpoint_list -i 4
+[5832] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58320001"></breakpoint></response>
+
+[5832] <- breakpoint_set -i 5 -t exception -x *
+[5832] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="58320002"></response>
+
+[5832] <- run -i 6
+[5832] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="stopping" reason="ok"></response>
+
+[5832] <- stop -i 7
+[5832] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="7" status="stopped" reason="ok"></response>
+
+[5832] Log closed at 2020-09-18 08:41:32
+
+[5837] Log opened at 2020-09-18 08:41:33
+[5837] I: Checking remote connect back address.
+[5837] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[5837] I: Checking header 'REMOTE_ADDR'.
+[5837] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[5837] I: Connected to client. :-)
+[5837] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/mylek/www/magento235/vendor/squizlabs/php_codesniffer/bin/phpcs" language="PHP" xdebug:language_version="7.3.18-1+ubuntu20.04.1+deb.sury.org+1" protocol_version="1.0" appid="5837" idekey="mylek"><engine version="2.9.6"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[5837] <- breakpoint_list -i 1
+[5837] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[5837] <- breakpoint_set -i 2 -t line -f file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php -n 33
+[5837] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="58370001"></response>
+
+[5837] <- breakpoint_list -i 3
+[5837] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58370001"></breakpoint></response>
+
+[5837] <- breakpoint_list -i 4
+[5837] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58370001"></breakpoint></response>
+
+[5837] <- breakpoint_set -i 5 -t exception -x *
+[5837] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="58370002"></response>
+
+[5837] <- run -i 6
+[5837] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="stopping" reason="ok"></response>
+
+[5837] <- stop -i 7
+[5837] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="7" status="stopped" reason="ok"></response>
+
+[5837] Log closed at 2020-09-18 08:41:33
+
+[5840] Log opened at 2020-09-18 08:41:33
+[5840] I: Checking remote connect back address.
+[5840] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[5840] I: Checking header 'REMOTE_ADDR'.
+[5840] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[5840] I: Connected to client. :-)
+[5840] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/mylek/www/magento235/vendor/squizlabs/php_codesniffer/bin/phpcs" language="PHP" xdebug:language_version="7.3.18-1+ubuntu20.04.1+deb.sury.org+1" protocol_version="1.0" appid="5840" idekey="mylek"><engine version="2.9.6"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[5840] <- breakpoint_list -i 1
+[5840] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[5840] <- breakpoint_set -i 2 -t line -f file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php -n 33
+[5840] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="58400001"></response>
+
+[5840] <- breakpoint_list -i 3
+[5840] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58400001"></breakpoint></response>
+
+[5840] <- breakpoint_list -i 4
+[5840] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58400001"></breakpoint></response>
+
+[5840] <- breakpoint_set -i 5 -t exception -x *
+[5840] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="58400002"></response>
+
+[5840] <- run -i 6
+[5840] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="stopping" reason="ok"></response>
+
+[5840] <- stop -i 7
+[5840] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="7" status="stopped" reason="ok"></response>
+
+[5840] Log closed at 2020-09-18 08:41:36
+
+[5846] Log opened at 2020-09-18 08:41:37
+[5846] I: Checking remote connect back address.
+[5846] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[5846] I: Checking header 'REMOTE_ADDR'.
+[5846] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[5846] I: Connected to client. :-)
+[5846] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/mylek/www/magento235/vendor/squizlabs/php_codesniffer/bin/phpcs" language="PHP" xdebug:language_version="7.3.18-1+ubuntu20.04.1+deb.sury.org+1" protocol_version="1.0" appid="5846" idekey="mylek"><engine version="2.9.6"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[5846] <- breakpoint_list -i 1
+[5846] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[5846] <- breakpoint_set -i 2 -t line -f file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php -n 33
+[5846] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="58460001"></response>
+
+[5846] <- breakpoint_list -i 3
+[5846] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58460001"></breakpoint></response>
+
+[5846] <- breakpoint_list -i 4
+[5846] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php" lineno="33" state="enabled" hit_count="0" hit_value="0" id="58460001"></breakpoint></response>
+
+[5846] <- breakpoint_set -i 5 -t exception -x *
+[5846] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="58460002"></response>
+
+[5846] <- run -i 6
+[5846] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="stopping" reason="ok"></response>
+
+[5846] <- stop -i 7
+[5846] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="7" status="stopped" reason="ok"></response>
+
+[5846] Log closed at 2020-09-18 08:41:38
+
+[6342] Log opened at 2020-09-18 08:47:54
+[6342] I: Checking remote connect back address.
+[6342] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[6342] I: Checking header 'REMOTE_ADDR'.
+[6342] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[6342] I: Connected to client. :-)
+[6342] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/mylek/www/magento235/bin/magento" language="PHP" xdebug:language_version="7.3.18-1+ubuntu20.04.1+deb.sury.org+1" protocol_version="1.0" appid="6342" idekey="mylek"><engine version="2.9.6"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[6342] <- breakpoint_list -i 1
+[6342] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[6342] <- breakpoint_set -i 2 -t line -f file:///home/mylek/www/magento235/app/code/MylSoft/Weather/ViewModel/NowWeather.php -n 33
+[6342] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="63420001"></response>
+
+[6342] <- run -i 3
+[6595] Log opened at 2020-09-18 08:49:23
+[6595] I: Checking remote connect back address.
+[6595] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[6595] I: Checking header 'REMOTE_ADDR'.
+[6595] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[6595] W: [5630] Log opened at 2020-09-21 14:06:11
+[5630] I: Checking remote connect back address.
+[5630] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[5630] I: Checking header 'REMOTE_ADDR'.
+[5630] W: Remote address not found, connecting to configured address/port: localhost:9000. :-|
+[5630] W: Creating socket for 'localhost:9000', poll success, but error: Operation now in progress (29).
+[5630] E: Could not connect to client. :-(
+[5630] Log closed at 2020-09-21 14:06:11
+

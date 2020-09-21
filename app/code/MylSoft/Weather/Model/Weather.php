@@ -5,7 +5,7 @@ namespace MylSoft\Weather\Model;
 use Magento\Framework\Model\AbstractModel;
 use Magento\Framework\DataObject\IdentityInterface;
 
-class Post extends AbstractModel implements IdentityInterface
+class Weather extends AbstractModel implements IdentityInterface
 {
     const CACHE_TAG = 'mylsoft_weather_weather';
 

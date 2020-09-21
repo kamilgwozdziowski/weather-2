@@ -3,9 +3,9 @@
 namespace MylSoft\Weather\Cron;
 
 use Magento\Framework\HTTP\Client\Curl;
-use \Magento\Framework\ObjectManagerInterface;
+use Magento\Framework\ObjectManagerInterface;
 
-class GetWeather
+class GetDataFromAPI
 {
 
     protected $_objectManager;
@@ -84,12 +84,13 @@ class GetWeather
         $logger->addWriter($writer);
         $logger->info(__METHOD__);
 
-        $repo = $this->_objectManager->get('MylSoft\Weather\Model\ResourceModel\WeatherRepository');
+        $repo = $this->_objectManager->get('MylSoft\Weather\Model\ResourceModel\Weather\Repository');
         $logger->info('TEST MYL2 weathe:');
         $response = $this->getCityData('Lublin', 'pl');
-        $res = $repo->addData($response);
+        $res = $repo->save($response);
         $logger->info($res);
 
         return $this;
     }
 }
+

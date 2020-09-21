@@ -3,11 +3,11 @@
 namespace MylSoft\Weather\Test\Integration\Cron;
 
 use PHPUnit\Framework\TestCase;
-use MylSoft\Weather\Cron\GetWeather;
+use MylSoft\Weather\Cron\GetDataFromAPI;
 use Magento\Framework\HTTP\Client\Curl;
 use Magento\TestFramework\Helper\Bootstrap;
 
-class GetWeatherTest extends TestCase
+class GetDataFromAPITest extends TestCase
 {
     /** @var ObjectManagerInterface */
     private $objectManager;
@@ -15,7 +15,7 @@ class GetWeatherTest extends TestCase
     /** @var Curl */
     private $curlMock;
 
-    /** @var GetWeather */
+    /** @var GetDataFromAPI */
     private $object;
 
     /**
@@ -29,7 +29,7 @@ class GetWeatherTest extends TestCase
         $this->objectManager = Bootstrap::getObjectManager();
         $this->curlMock = $this->createMock(Curl::class);
 
-        $this->object = new GetWeather($this->objectManager, $this->curlMock);
+        $this->object = new GetDataFromAPI($this->objectManager, $this->curlMock);
     }
 
     /**
